@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+
+.subtitle {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+}
+
+.statCard {
+  background: rgba(108, 92, 231, 0.1);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  border: 1px solid rgba(108, 92, 231, 0.2);
+}
+
+.statHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+
+.statIcon {
+  font-size: 1.2rem;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.progressBar {
+  height: 8px;
+  background: rgba(108, 92, 231, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.statValue {
+  display: flex;
+  align-items: baseline;
+  margin-top: var(--space-xs);
+}
+
+.valueNumber {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.valueMax {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-left: 2px;
+}
+
+.statDesc {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+}
+
+.tasksSection {
+  margin-top: var(--space-sm);
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.taskButton {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: rgba(108, 92, 231, 0.1);
+  border: 1px solid rgba(108, 92, 231, 0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.taskButton:hover:not(:disabled) {
+  background: rgba(108, 92, 231, 0.2);
+  border-color: var(--color-primary);
+}
+
+.taskButton:disabled {
+  cursor: default;
+}
+
+.taskButton.completed {
+  background: rgba(0, 206, 201, 0.1);
+  border-color: rgba(0, 206, 201, 0.3);
+}
+
+.taskIcon {
+  font-size: 1.5rem;
+}
+
+.taskInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskTitle {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.taskReward {
+  font-size: 0.8rem;
+  color: var(--color-secondary);
+}
+
+.checkmark {
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+}

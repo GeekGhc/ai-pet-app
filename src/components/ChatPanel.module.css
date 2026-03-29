@@ -1,0 +1,143 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid rgba(108, 92, 231, 0.3);
+  font-weight: 500;
+}
+
+.headerIcon {
+  font-size: 1.2rem;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-sm) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--color-text-secondary);
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: var(--space-sm);
+}
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-xs);
+}
+
+.userMessage {
+  justify-content: flex-end;
+}
+
+.petMessage {
+  justify-content: flex-start;
+}
+
+.avatar {
+  font-size: 1.5rem;
+}
+
+.bubble {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-lg);
+  max-width: 70%;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.userMessage .bubble {
+  background: var(--color-primary);
+  color: var(--color-text);
+  border-bottom-right-radius: 4px;
+}
+
+.petMessage .bubble {
+  background: rgba(108, 92, 231, 0.2);
+  color: var(--color-text);
+  border-bottom-left-radius: 4px;
+}
+
+.quickReplies {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+  padding: var(--space-sm) 0;
+  border-top: 1px solid rgba(108, 92, 231, 0.2);
+}
+
+.quickButton {
+  background: rgba(108, 92, 231, 0.2);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: var(--color-text);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quickButton:hover {
+  background: var(--color-primary);
+}
+
+.inputArea {
+  display: flex;
+  gap: var(--space-xs);
+  padding-top: var(--space-sm);
+}
+
+.input {
+  flex: 1;
+  background: rgba(108, 92, 231, 0.1);
+  border: 1px solid rgba(108, 92, 231, 0.3);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  color: var(--color-text);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+}
+
+.input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.sendButton {
+  background: var(--color-primary);
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sendButton:hover {
+  background: #5a4bd4;
+}
